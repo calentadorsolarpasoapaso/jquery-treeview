@@ -90,7 +90,8 @@
 			}
 
 			// apply event to hitarea
-			this.find("div." + CLASSES.hitarea).click( toggler );
+			this.find("div." + CLASSES.hitarea).unbind( "click" ).click( toggler );
+
 		},
 		treeview: function(settings) {
 
